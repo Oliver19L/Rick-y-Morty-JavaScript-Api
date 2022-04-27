@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Chilanka", cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main_container {
+  width: 1020px;
+  margin-block-start: 50px;
+  position: relative;
+}
+
+.main_header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding-inline: 10px;
+  overflow: hidden;
+}
+input {
+  width: 280px;
+  outline: none;
+  background-color: gray;
+  font-size: 18px;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+
+.element_left {
+  display: flex;
+  gap: 20px;
+}
+
+img {
+  height: 140px;
+  width: 240px;
+  object-fit: cover;
+}
+
+.navi {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ulist {
+  display: flex;
+  text-decoration: none;
+  gap: 30px;
+}
+
+.ulist > li {
+  text-decoration: none;
+  list-style: none;
+  gap: 10px;
+  color: #fff;
+}
+
+.conteiner_img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.imagen {
+  width: 200px;
+  height: 200px;
+}
+
+.conteiner__All {
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  position: absolute;
+  transform: translateX(200px);
+  z-index: 1;
+}
+
+.hide :first-child {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+
+.hide > h1 {
+  font-size: 20px;
+}
+
+.overlay {
+  display: none;
+  width: 300px;
+  height: 200px;
+
+  /* transform: translateX(200px);*/
+}
+
+.mainFirst {
+  display: flex;
+  position: relative;
+}
+
+.result__All {
+  display: none;
+  background-color: #fff;
+  width: 280px;
+  max-height: 400px;
+  position: absolute;
+  inset-block-start: 50px;
+  inset-inline-start: 270px;
+  z-index: 999;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.result_Search {
+  display: flex;
+  margin-block: 6px;
+}
+
+.result_Search_Info > h1 {
+  font-size: 14px;
+  padding-inline-start: 10px;
+}
+
+.result_Search > img {
+  width: 50px;
+  height: 50px;
+  padding-inline-start: 10px;
+}
